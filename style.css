@@ -17,25 +17,34 @@ body {
 	color: white;
 }
 
-#app h1 {
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 1px;
-	margin-bottom: 3rem;
-}
-
-#app .container {
-	max-width: 1200px;
-	margin-inline: auto;
-	display: flex;
-	justify-content: center;
+.grid {
+	display: grid;
+	grid-template-columns: minmax(auto, 1fr) 1fr 1fr minmax(auto, 1fr);
+	justify-items: center;
 	gap: 2rem;
 }
 
-#app .images {
+#app h1 {
+	grid-column: 1 / span 4;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+}
+
+#app .first-image,
+#app .second-image {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+#app .first-image {
+	grid-column: 2 / 3;
+}
+
+#app .second-image {
+	grid-column: 3 / 4;
 }
 
 #app img {

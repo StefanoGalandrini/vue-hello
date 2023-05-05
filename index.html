@@ -13,19 +13,18 @@
 
 <body>
 	<div id="app">
-		<h1>{{ title }}</h1>
-		<div class="container">
-			<div class="images">
+		<div class="grid">
+			<h1>{{ title }}</h1>
+			<div class="first-image">
 				<img :src="cover.imgSource" alt="">
 				<p>{{ cover.text }}</p>
 			</div>
 
-			<div class="images">
+			<div class="second-image">
 				<img :src="castle.imgSource" alt="">
 				<p>{{ castle.text }}</p>
 			</div>
 		</div>
-
 	</div>
 </body>
 
