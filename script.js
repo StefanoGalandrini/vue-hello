@@ -2,10 +2,14 @@ const app = Vue.createApp({
 	data() {
 		return {
 			title: "Castelli famosi d'Irlanda",
-			img1src: "img/copertina.jpg",
-			img2src: "img/castello.jpg",
-			textCover: "Copertina del disco",
-			textCastle: "il Moydrum Castle, fra Dublino e Galway",
+			cover: {
+				imgSource: "img/copertina.jpg",
+				text: "Copertina del disco",
+			},
+			castle: {
+				imgSource: "img/castello.jpg",
+				text: "Il Moydrum Castle, fra Dublino e Galway",
+			},
 		};
 	},
 });
